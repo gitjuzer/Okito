@@ -1,0 +1,30 @@
+.text-field {
+	display: block; 
+	width: 1290px;
+    height: 720px;
+    border: 1px solid #999999;
+	box-sizing: border-box;
+	border-radius: 4px;
+	left:230px;
+	top:20px;
+	background-color: #FFFFFF;
+}
+
+.question-field {
+	height: 66%;
+}
+
+#question {
+	text-align: center;
+	font-size: 32px;
+	padding: 50px;
+	height: 300px;
+}
+
+.controls {
+	text-align: center;
+}
+
+.controls input[type="button"] {
+	margin: 100px;
+}

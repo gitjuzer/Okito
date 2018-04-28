@@ -1,0 +1,33 @@
+body {
+	width: 100wh;
+	height: 90vh;
+	color: black;
+	background: #DDDDDD;
+	background-attachment: fixed;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+	width: 100%;
+}
+
+.container .left {
+	float: left;
+	width: 20%;
+}
+
+.container .right {
+	float: right;
+	width: 80%;
+}
+
+h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	left: 0;
+}
