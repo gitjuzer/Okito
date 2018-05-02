@@ -1,0 +1,8 @@
+body {
+	width: 100wh;
+	height: 90vh;
+	color: black;
+	background: #DDDDDD;
+	background-attachment: fixed;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
