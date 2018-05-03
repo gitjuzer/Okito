@@ -1,13 +1,14 @@
 .container {
 	width: 50%;
-}
 
-.container .left {
+
+	.left {
 	float: left;
 	width: 20%;
-}
+	}
 
-.container .right {
+	.right {
 	float: right;
 	width: 70%;
+	}
 }
