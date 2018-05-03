@@ -1,14 +1,12 @@
 .container {
-	width: 50%;
+  width: 50%;
 
-
-	.left {
+  .left {
 	float: left;
 	width: 20%;
-	}
+  }
 
-	.right {
-	float: right;
-	width: 70%;
-	}
+  .right {
+	margin-left: 250px;
+  }
 }
