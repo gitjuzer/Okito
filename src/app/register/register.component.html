@@ -3,16 +3,15 @@
     <div class="header">
       Regisztráció
     </div>
-    <form method="POST" action="/users/register">
+    <div class="content">
       Email:
-      <input type="text" class="txt" name="email" placeholder="példa@példa.com"> Jelszó:
-      <input type="password" class="txt" name="password" placeholder="jelszó">
-      <input type="submit" class="btn" name="register" value="Regisztráció">
-      <br>
-    </form>
+      <input type="text" class="txt" name="email" placeholder="példa@példa.com" #email>
+      Jelszó:
+      <input type="password" class="txt" name="password" placeholder="jelszó" #password>
+      <button (click)="register(email.value, password.value)">Regisztrál</button>
+    </div>
     <div class="footer">
-      Van már fiókod?
-      <a routerLink="/">Jelentkezz be itt!</a>
+        Van már fiókod? <a routerLink="/">Jelentkezz be!</a>
     </div>
   </div>
 </div>

@@ -16,4 +16,13 @@ export class UserService {
       });
   }
 
+  register(email, password) {
+    return new Promise((resolve, reject) => {
+        this.http.post<User>('/rest/users/register', {
+            email: email,
+            password: password
+        }).subscribe(resolve, reject);
+    });
+  }
+
 }
