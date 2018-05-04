@@ -3,13 +3,13 @@
     <div class="header">
       Bejelentkezés
     </div>
-    <form method="POST" action="/users/login">
+    <div class="content">
       Email:
-      <input type="text" class="txt" name="email" placeholder="példa@példa.com">
+      <input type="text" class="txt" name="email" placeholder="példa@példa.com" #email>
       Jelszó:
-      <input type="password" class="txt" name="password" placeholder="jelszó">
-      <input type="submit" class="btn" name="login" value="Bejelentkezés">
-    </form>
+      <input type="password" class="txt" name="password" placeholder="jelszó" #password>
+      <button (click)="login(email.value, password.value)">Login</button>
+    </div>
     <div class="footer">
         Új vagy még az oldalon? <a routerLink="register">Regisztrálj itt!</a>
     </div>
