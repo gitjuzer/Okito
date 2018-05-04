@@ -1,14 +1,15 @@
+// Schema first
+require('./server/schema/registerschema')();
 // Get dependencies
 const express = require('express');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const BearerStrategy = require('passport-http-bearer').Strategy;
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
-const mongo = require('mongodb');
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://okito:5nu89nfdNHbexj0z@okitodb-llffi.mongodb.net/okito');
-
-var db = mongoose.connection;
+const User = mongoose.model('users');
 
 var users = require('./server/routes/users');
 
@@ -21,10 +22,17 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
+app.use(passport.initialize());
+
+passport.use(new LocalStrategy({
+  session: false,
+  usernameField: 'email'
+}, User.authenticate()));
+
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/api', api);
-app.use('/users', users);
+users(app, passport);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
