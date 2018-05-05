@@ -4,14 +4,17 @@
       Bejelentkezés
     </div>
     <div class="content">
-      Email:
-      <input type="text" class="txt" name="email" placeholder="példa@példa.com" #email>
-      Jelszó:
+      <div class="error-popup" *ngIf='showError'>
+        Rossz email cím vagy jelszó!
+      </div>
+      <br> Email:
+      <input type="text" class="txt" name="email" placeholder="példa@példa.com" #email> Jelszó:
       <input type="password" class="txt" name="password" placeholder="jelszó" #password>
       <button (click)="login(email.value, password.value)">Login</button>
     </div>
     <div class="footer">
-        Új vagy még az oldalon? <a routerLink="register">Regisztrálj itt!</a>
+      Új vagy még az oldalon?
+      <a routerLink="register">Regisztrálj itt!</a>
     </div>
   </div>
 </div>
