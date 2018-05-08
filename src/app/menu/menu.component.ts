@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+
   constructor() { }
+
+show(){
+  this.show;
+}  
+
 
   ngOnInit() {
   }
