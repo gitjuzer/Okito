@@ -1,43 +1,44 @@
 .container {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
 
 .panel {
-    display: inline-block;
-	border: 1px solid #999999;
+  display: inline-block;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  background: white;
+  .header {
+    padding: 15px;
+    background: #5149c1;
+    color: white;
+    font-size: 32px;
+  }
+  .footer {
+    padding: 10px;
+    background: #DDDDDD;
+  }
+  .content {
+    padding: 40px;
+    text-align: center;
+    .error-popup {
+      color: red;
+    }
+  }
+  input[type="text"],
+  input[type="password"] {
+    appearance: none;
+    border: 1px solid #999999;
     border-radius: 2px;
-    background: white;
-
-    .header {
-        padding: 15px;
-        background: #5149c1;
-        color: white;
-        font-size: 32px;
-    }
-
-    .footer {
-        padding: 10px;
-        background: #DDDDDD;
-    }
-
-    .content {
-        padding: 40px;
-        text-align: center;
-    }
-
-    input[type="text"], input[type="password"] {
-        appearance: none;
-        border: 1px solid #999999;
-        border-radius: 2px;
-        padding: 5px;
-        margin: 20px;
-        height: 25px;
-    }
+    padding: 5px;
+    margin: 20px;
+    height: 25px;
+  }
 }
 
 #login {
-    input[type="text"], input[type="password"] {
-        display: block;
-    }
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+  }
 }
