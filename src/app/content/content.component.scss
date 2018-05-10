@@ -1,59 +1,51 @@
 input[type="button"] {
-    width: 150px;
+  width: 150px;
+  height: 50px;
+  background-color: #EEEEEE;
+  font-size: 16px;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  text-align: center;
+  color: black;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  .control-button {
+    font-size: 24px;
+    width: 50px;
     height: 50px;
-    background-color: #EEEEEE;  
-    font-size: 16px;
-    border-radius: 2px;
-    border: 1px solid #999999;
-    text-align: center;
-    color: black;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
-    .control-button {
-        font-size: 24px;
-        width: 50px;
-        height: 50px;
-
-        .control-button:hover {
-            background-color: #999999;
-        }
-
+    .control-button:hover {
+      background-color: #999999;
     }
-    
+  }
 }
 
-
-
-
 .text-field {
-	display: block; 
-	width: 1290px;
-    height: 720px;
-    border: 1px solid #999999;
-	box-sizing: border-box;
-	border-radius: 4px;
-	left:230px;
-	top:20px;
-	background-color: #FFFFFF;
+  display: block;
+  width: 1290px;
+  height: 720px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  border-radius: 4px;
+  left: 230px;
+  top: 20px;
+  background-color: #FFFFFF;
 }
 
 .question-field {
-	height: 66%;
+  height: 66%;
 }
 
 #question {
-	text-align: center;
-	font-size: 32px;
-	padding: 50px;
-	height: 300px;
+  text-align: center;
+  font-size: 32px;
+  padding: 50px;
+  height: 300px;
 }
 
 .controls {
-	text-align: center;
-
-
-    input[type="button"] {
-	margin: 100px;
-    }
+  text-align: center;
+  input[type="button"] {
+    margin: 100px;
+  }
 }
