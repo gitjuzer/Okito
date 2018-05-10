@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { User } from './user';
 
 @Injectable()
 export class UserService {
+
+    token: string;
 
     constructor(private http: HttpClient) { }
 
@@ -22,6 +24,16 @@ export class UserService {
                 email: email,
                 password: password
             }).subscribe(resolve, reject);
+        });
+    }
+
+    authenticate() {
+        return new Promise((resolve, reject) => {
+            const headers: HttpHeaders = new HttpHeaders().append('Authorization', 'Bearer ' + this.token);
+            this.http.post('/rest/users/auth', {},
+                {
+                    headers: headers
+                }).subscribe(resolve, reject);
         });
     }
 
