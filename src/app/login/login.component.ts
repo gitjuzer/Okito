@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-    private showError = false;
+    showError = false;
 
     constructor(private userService: UserService, private router: Router, private route: ActivatedRoute) { }
 
