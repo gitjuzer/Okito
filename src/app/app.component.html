@@ -2,21 +2,19 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="home">Főoldal</a>
+      <a (click)="routeWithAuthentication('home')">Főoldal</a>
     </li>
     <li>
-      <a routerLink="account/accsettings">Fiók</a>
+      <a (click)="routeWithAuthentication('account/accsettings')">Fiók</a>
     </li>
     <li>
-      <form action="/users/logout" method="POST" style="float:right">
-        <input type="submit" value="Kilépés">
-      </form>
+      <a (click)="logout()" style="float: right">Kilépés</a>
     </li>
     <li style="float: right">
       <a routerLink="">Bejelentkezés</a>
     </li>
     <li style="float: right">
-      <a routerLink="admin/subjects">Admin felület</a>
+      <a (click)="routeWithAuthentication('admin/subjects')">Admin felület</a>
     </li>
   </ul>
 </nav>

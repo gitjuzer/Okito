@@ -31,6 +31,7 @@ passport.use(new LocalStrategy({
 
 passport.use(new BearerStrategy(
   function (token, done) {
+    console.log(token);
     User.findOne({
       token: token
     }, function (err, user) {
