@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { UserService } from './user.service';
 import { AccountComponent } from './account/account.component';
+import { AccsettingsComponent } from './accsettings/accsettings.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AccountComponent } from './account/account.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    AccountComponent
+    AccountComponent,
+    AccsettingsComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,

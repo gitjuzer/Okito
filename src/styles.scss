@@ -1,11 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
-
 body {
-	width: 100wh;
-	height: 90vh;
-	color: black;
-	background: #DDDDDD;
-	background-attachment: fixed;
-	padding: 1.5em;
-	font-family: "Raleway", "Arial";
+  width: 100wh;
+  height: 90vh;
+  color: black;
+  background: #DDDDDD;
+  background-attachment: fixed;
+  margin: 0px;
+  font-family: "Raleway", "Arial";
+}
+
+* {
+  font-family: "Raleway", "Arial";
+}
+
+.container {
+  padding: 1.5em;
+}
+
+.panel {
+  border: 1px solid #999999;
+  border-radius: 2px;
+  background: white;
+  .header {
+    text-align: center;
+    padding: 15px;
+    background: #5149c1;
+    color: white;
+    font-size: 32px;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 2px;
+  border: 1px solid #5149c1;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #7169E1;
+}
+
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  color: white;
+  background-color: #5149c1;
+  font-family: "Raleway", "Arial";
+  width: 200px;
+  height: 40px;
+}
+
+aside {
+  float: left;
+  width: 200px;
+  border-right: 1px solid gray;
+  ul {
+    list-style-type: none;
+    li {
+      margin: 20px 0px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section {
+  text-align: center;
+}
+
+article {
+  padding: 1em;
+  overflow: hidden;
 }

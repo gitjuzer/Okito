@@ -1,0 +1,18 @@
+.content {
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  background: white;
+  margin: 10px;
+  #settings {
+    padding: 10px;
+    input {
+      display: block;
+      margin: 20px auto 20px auto;
+      height: 20px;
+    }
+    button {
+      margin: 20px 20px 0px 20px;
+    }
+  }
+}
