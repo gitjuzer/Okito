@@ -7,6 +7,8 @@ import { RegisterComponent } from './register/register.component';
 import { AccountComponent } from './account/account.component';
 import { StatsComponent } from './stats/stats.component';
 import { AccsettingsComponent } from './accsettings/accsettings.component';
+import { AdminComponent } from './admin/admin.component';
+import { SubjectsComponent } from './admin/subjects/subjects.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,16 @@ const routes: Routes = [
       {
         path: 'accsettings',
         component: AccsettingsComponent
+      }
+    ]
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      {
+        path: 'subjects',
+        component: SubjectsComponent
       }
     ]
   }

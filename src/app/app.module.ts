@@ -18,6 +18,8 @@ import { UserService } from './user.service';
 import { AccountComponent } from './account/account.component';
 import { AccsettingsComponent } from './accsettings/accsettings.component';
 import { StatsComponent } from './stats/stats.component';
+import { AdminComponent } from './admin/admin.component';
+import { SubjectsComponent } from './admin/subjects/subjects.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { StatsComponent } from './stats/stats.component';
     RegisterComponent,
     AccountComponent,
     AccsettingsComponent,
-    StatsComponent
+    StatsComponent,
+    AdminComponent,
+    SubjectsComponent
   ],
   imports: [
     BrowserModule,
