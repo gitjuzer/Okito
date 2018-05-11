@@ -25,8 +25,8 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 })
 export class MenuComponent implements OnInit {
 
-  private subjects: Array<Subject> = [];
-  private selected: {
+  subjects: Array<Subject> = [];
+  selected: {
     subject: number,
     category: number,
     lesson: number
