@@ -1,30 +1,32 @@
 <div class="panel">
   <div class="header">
-    Tárgyak szerkesztése
+    <div class="back-div">
+      <button class="back-button" *ngIf="panelState > 0" (click)="goBack()"></button>
+    </div>
+    <div class="header-div">
+      {{header}}
+    </div>
   </div>
-  <div class="content">Elérhető Tárgyak
-<div class="kurzusok">
-  <button id="Math" >Matematika</button>
-  <button id="Literature">Irodalom</button>
-  <button id="Grammar">Nyelvtan</button>
-  <button id="History">Történelem</button>
-  <button id="Chemistry">Kémia</button>
-  <button id="Physics">Fizika</button>
-  <hr>
-  <div class="kategoria">
-    <div>Kategóriák</div>
-      <button >Kat</button>
-      <button >Eg</button>
-      <button >Oria</button>
-      <hr>
-  </div>
-  <div class="lecke">
-    <div>Leckék</div>
-      <button id="Math" >Lec</button>
-      <button id="Literature">Ke</button>
-      <button id="Grammar">lecke</button>
+  <div class="content">
+    <div class="subjects" *ngIf="panelState === PanelState.SUBJECT">
+      <button *ngFor="let subject of subjects; let i = index" (click)="setPanelState(PanelState.CATEGORY, i)">
+        <img [src]="subject.imageUrl" alt="">
+        <span>{{subject.name}}</span>
+      </button>
+    </div>
+    <div class="categories" *ngIf="panelState === PanelState.CATEGORY">
+      <button *ngFor="let category of subjects[selected.subject].categories; let i = index" (click)="setPanelState(PanelState.LESSON, i)">
+        <img [src]="category.imageUrl" alt="">
+        <span>{{category.name}}</span>
+      </button>
+    </div>
+    <div class="lessons" *ngIf="panelState === PanelState.LESSON">
+      <button *ngFor="let lesson of subjects[selected.subject].categories[selected.category].lessons; let i = index" (click)="setPanelState(PanelState.EDITLESSON, i)">
+        <img [src]="lesson.imageUrl" alt="">
+        <span>{{lesson.name}}</span>
+      </button>
+    </div>
+    <div class="edit-lesson" *ngIf="panelState === PanelState.EDITLESSON">
+    </div>
   </div>
 </div>
-</div>
-  </div>
-

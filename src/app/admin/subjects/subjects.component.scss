@@ -5,57 +5,24 @@
   margin: 1px;
   height: 400px;
   padding: 5px;
-  
-  .kurzusok {   
-    button {
-      display:inline;
-      background-color: #EEEEEE;
-      color:black;
-      margin: 3px 3px 0px 3px;
-      width: 15%;
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 40px;
-      padding: 5px 10px;
-      text-align: right;
-      font-size: 24px; 
+  text-align: left;
+  button {
+    display: inline-block;
+    background-color: #EEEEEE !important;
+    color: black;
+    margin: 3px 3px 0px 3px;
+    padding: 0px 0px;
+    text-align: left;
+    font-size: 24px;
+    height: 50px;
+    width: 300px;
+    img {
+      height: 100%;
+      width: 50px;
+      vertical-align: bottom;
     }
-    #Math {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-      
-    }
-    #Literature {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-    }
-    #Grammar {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-    }
-    #History {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-    }
-    #Chemistry {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-    }
-    #Physics {
-      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-    }
-    .kategoria{
-      button{
-        display:inline;
-        background-color: #EEEEEE;
-        color:black;
-        margin: 3px 3px 0px 3px;
-        width: 15%;
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 40px;
-        padding: 5px 10px;
-        text-align: right;
-        font-size: 24px; 
-        background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
-      }
-
-      
+    span {
+      text-align: center;
     }
   }
 }
