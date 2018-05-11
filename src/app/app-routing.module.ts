@@ -5,8 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AccountComponent } from './account/account.component';
-import { StatsComponent } from './stats/stats.component';
-import { AccsettingsComponent } from './accsettings/accsettings.component';
+import { StatsComponent } from './account/stats/stats.component';
+import { AccsettingsComponent } from './account/accsettings/accsettings.component';
 import { AdminComponent } from './admin/admin.component';
 import { SubjectsComponent } from './admin/subjects/subjects.component';
 
