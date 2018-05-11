@@ -1,0 +1,18 @@
+<div class="menu">
+  <ul>
+    <div class="header">Tárgyak</div>
+    <li class="subject" *ngFor="let item of subjects; let i = index;" (click)="selected.subject = i">
+      <a>{{item.name}}</a>
+      <ul class="categories" *ngIf="selected.subject === i" @categories>
+        <li class="category" *ngFor="let category of item.Categories; let j = index;" (click)="selected.category = j">
+          <a>{{category.name}}</a>
+          <ul class="lessons" *ngIf="selected.category === j" @categories>
+            <li class="lesson" *ngFor="let lesson of category.Lessons; let k = index;" (click)="selected.lesson = k">
+              <a>{{lesson.name}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

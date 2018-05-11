@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { ContentComponent } from './content/content.component';
+import { MenuComponent } from './home/menu/menu.component';
+import { ContentComponent } from './home/content/content.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -16,10 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { UserService } from './user.service';
 import { AccountComponent } from './account/account.component';
-import { AccsettingsComponent } from './accsettings/accsettings.component';
-import { StatsComponent } from './stats/stats.component';
+import { AccsettingsComponent } from './account/accsettings/accsettings.component';
+import { StatsComponent } from './account/stats/stats.component';
 import { AdminComponent } from './admin/admin.component';
 import { SubjectsComponent } from './admin/subjects/subjects.component';
+import { SubjectService } from './subject/subject.service';
 
 @NgModule({
   declarations: [
@@ -38,9 +39,10 @@ import { SubjectsComponent } from './admin/subjects/subjects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
-  providers: [UserService],
+  providers: [UserService, SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
