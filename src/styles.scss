@@ -30,11 +30,25 @@ a:hover {
   border-radius: 2px;
   background: white;
   .header {
-    text-align: center;
     padding: 15px;
     background: #5149c1;
     color: white;
     font-size: 32px;
+    height: 40px;
+    .back-div {
+      text-align: left;
+      height: 100%;
+      .back-button {
+        background-image: url("/assets/back_arrow_white.png");
+        position: relative;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .header-div {
+      margin-top: -40px;
+      text-align: center;
+    }
   }
 }
 
@@ -61,6 +75,16 @@ button {
   font-family: "Raleway", "Arial";
   width: 200px;
   height: 40px;
+}
+
+.back-button {
+  width: 64px;
+  height: 64px;
+  background-color: transparent !important;
+  border: none !important;
+  background-image: url('/assets/back_arrow_black.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 aside {

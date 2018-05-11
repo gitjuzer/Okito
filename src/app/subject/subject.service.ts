@@ -21,6 +21,7 @@ export class SubjectService {
         new Lesson('Pitagorasz-tétel')
       ])
     ]);
+    subject.imageUrl = 'https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png';
     array.push(subject);
 
     subject = new Subject('Történelem', [
@@ -32,6 +33,7 @@ export class SubjectService {
         new Lesson('A feudális Európa')
       ])
     ]);
+    subject.imageUrl = 'https://cdn2.iconfinder.com/data/icons/media-player-blue-round/512/Play-01-512.png';
     array.push(subject);
 
     return array;
