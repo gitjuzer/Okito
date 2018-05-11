@@ -1,0 +1,61 @@
+.content {
+  border: 1px;
+  border-radius: 2px;
+  background-color: white;
+  margin: 1px;
+  height: 400px;
+  padding: 5px;
+  
+  .kurzusok {   
+    button {
+      display:inline;
+      background-color: #EEEEEE;
+      color:black;
+      margin: 3px 3px 0px 3px;
+      width: 15%;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 40px;
+      padding: 5px 10px;
+      text-align: right;
+      font-size: 24px; 
+    }
+    #Math {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+      
+    }
+    #Literature {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+    }
+    #Grammar {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+    }
+    #History {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+    }
+    #Chemistry {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+    }
+    #Physics {
+      background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+    }
+    .kategoria{
+      button{
+        display:inline;
+        background-color: #EEEEEE;
+        color:black;
+        margin: 3px 3px 0px 3px;
+        width: 15%;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 40px;
+        padding: 5px 10px;
+        text-align: right;
+        font-size: 24px; 
+        background-image: url(https://findicons.com/files/icons/1676/primo/128/button_blue_stop.png);
+      }
+
+      
+    }
+  }
+}
