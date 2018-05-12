@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material';
 
 import { UserService } from './user.service';
 import { AccountComponent } from './account/account.component';
@@ -21,6 +22,7 @@ import { StatsComponent } from './account/stats/stats.component';
 import { AdminComponent } from './admin/admin.component';
 import { SubjectsComponent } from './admin/subjects/subjects.component';
 import { SubjectService } from './subject/subject.service';
+import { BasicErrorDialogComponent } from './dialogs/basic-error-dialog/basic-error-dialog.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,18 @@ import { SubjectService } from './subject/subject.service';
     AccsettingsComponent,
     StatsComponent,
     AdminComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    BasicErrorDialogComponent,
+  ],
+  entryComponents: [
+    BasicErrorDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [UserService, SubjectService],
   bootstrap: [AppComponent]

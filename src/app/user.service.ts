@@ -37,4 +37,14 @@ export class UserService {
         });
     }
 
+    authenticateAdmin() {
+        return new Promise((resolve, reject) => {
+            const headers: HttpHeaders = new HttpHeaders().append('Authorization', 'Bearer ' + this.token);
+            this.http.post('/rest/users/admin', {},
+                {
+                    headers: headers
+                }).subscribe(resolve, reject);
+        });
+    }
+
 }
